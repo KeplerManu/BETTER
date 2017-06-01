@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BetterMenu.master.cs" Inherits="BETTER.MasterPages.BetterMenu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="../../CSS/Master.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body id="wrapper">
+    <form id="form1" runat="server">
+        <header id="header">
+            <h1 id="top"><asp:ContentPlaceHolder ID="pageName" runat="server" /></h1>
+            <%-- Page Name has CSS3 tag (text-shadow)--%>
+            <hr style="width: 99%" />
+        </header>
+        <div>
+            <div id="container2">
+                <div id="container1">
+                    <nav id="leftcolumn">
+                        <h3 class="center">BETTER</h3>
+                        <ul>
+                            <li><a href="MainMenu.aspx"><b>Main Menu</b></a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="CharacterSelection.aspx"><b>Character Selection</b></a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="CharacterManagement.aspx"><b>Character Management</b></a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="Challenge.aspx"><b>Challenge</b></a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="HallOfFame.aspx"><b>Hall of Fame</b></a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="FightSummary.aspx"><b>Fight Summary</b></a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="ExerciseUpload.aspx"><b>Exercise Upload</b></a></li>
+                            <li>&nbsp;</li>
+                            <li><a href="LogoutScreen.aspx"><b>LOGOUT</b></a></li>
+                        </ul>
+                        <h4 style="text-align:center">Now logged in as <asp:Label runat="server" ID="lblUsername" /></h4>
+                        <h4 style="text-align:center">Exercise Points: <asp:Label runat="server" ID="lblExercisePoints" /></h4>
+                    </nav>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer id="footer">
+        <address>
+            <%-- address text aligned to right with css --%>
+            <hr />
+            Name: Kepler Manu-Long &copy;<br />
+        </address>
+    </footer>
+</body>
+
+</html>
