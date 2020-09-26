@@ -1,0 +1,8 @@
+Test Account Details
+Email: JohnSmith@nonexistant.com, Password: password, ParentPIN: 5555
+Email: Who@nonexistant.com, Password: password, ParentPIN: 1111
+DATABASE ACCESS: name: admin, password: strPassword1
+
+サイトを起動する前にudbBETTER.sqlを実行してください
+Welcomeページからはじめてください
+Web.configのファイルでconnectionStringのData Sourceを自分のパソコンの名前に変えてください
